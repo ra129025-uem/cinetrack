@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <!--Cabeçalho do site CineTrack-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineTrack</title>
-</head>
-<body>
-    <!--Titulo e status possíveis para os filmes-->
-    <h1>CineTrack</h1>
-    <p><strong>CineTrack </strong>é seu gerenciador de filmes: registre o que já viu, o que está vendo e o que quer ver</p>
-    <h2>Status Possíveis</h2>
-    <ul id="lista-status">
-        <li class="item-status">Assistido</li>
-        <li class="item-status">Assistindo</li>
-        <li class="item-status">Quero assistir</li>
-    </ul>
-    <!--Filmes favoritos e seus detalhes-->
-    <h2>Meus filmes favoritos</h2>
-    <ol>
-        <li>Vingadores: Ultimato</li>
-        <li>Carros</li>
-        <li>A Lista de Schindler</li>
-    </ol>
-    <h2>Sobre Vingadores: Ultimato</h2>
-    <dl>
-        <dt>Diretor</dt> <dd>Irmãos Russo</dd>
-        <dt>Ano</dt> <dd>2019</dd>
-        <dt>Gênero</dt> <dd>Ficção Científica</dd>
-    </dl>
-    <p>&copy; 2025 CineTrack.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description"
+            content="Sua lista de filmes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CineTrack</title>
+    </head>
+    <body>
+        <header>
+            <h1>CineTrack</h1>
+            <input type="search" aria-label="Buscar filme">
+            <button>+ Adicionar</button>
+        </header>
+        <nav aria-label="Filtros de status">
+            <button class="ativo">Todos</button>
+            <button>Assistido</button>
+            <button>Assistindo</button>
+            <button>Quero assistir</button>
+        </nav>
+        <main>
+            <section id="lista" aria-live="polite">
+                <article class="card">
+                    <img src="../img/capa_aorigem.jpg" alt="Capa do Filme: A Origem" width="135">
+                    <h2>A Origem</h2>
+                    <p>2010 - Ficção Científica</p>
+                    <p>Nota: ★★★★☆</p>
+                    <span class="badge">Assistido</span>
+                    <button class="button">Editar</button>
+                    <button class="button">Remover</button>
+                </article>
+                <article class="card">
+                    <img src="../img/capa_parasita.jpg" alt="Capa do Filme: Parasita" width="135">
+                    <h2>Parasita</h2>
+                    <p>2019 - Suspense</p>
+                    <p>Nota: ★★★★☆</p>
+                    <span class="badge">Assistido</span>
+                    <button class="button">Editar</button>
+                    <button class="button">Remover</button>
+                </article>
+                <article class="card">
+                    <img src="../img/capa_compadecida.jpg" alt="Capa do Filme: O Auto da Compadecida" width="135">
+                    <h2>O Auto da Compadecida</h2>
+                    <p>1350 - Comédia</p>
+                    <p>Nota: ★★★★★</p>
+                    <span class="badge">Assistido</span>
+                    <button class="button">Editar</button>
+                    <button class="button">Remover</button>
+                </article>
+                <article class="card">
+                    <img src="../img/capa_dunadois.jpeg" alt="Capa do Filme: Duna: Parte Dois" width="135">
+                    <h2>Duna: Parte Dois</h2>
+                    <p>2024 - Ficção Científica</p>
+                    <p>Nota: ☆☆☆☆☆</p>
+                    <span class="badge">Quero assistir</span>
+                    <button class="button">Editar</button>
+                    <button class="button">Remover</button>
+                </article>
+                <article class="card">
+                    <img src="../img/capa_interestelar].jpg" alt="Capa do Filme: Interestelar" width="135">
+                    <h2>Interestelar</h2>
+                    <p>2014 - Ficção Científica</p>
+                    <p>Nota: ★★★★★</p>
+                    <span class="badge">Assistido</span>
+                    <button class="button">Editar</button>
+                    <button class="button">Remover</button>
+                </article>
+                <article class="card">
+                    <img src="../img/capa_cidadededeus.jpg" alt="Capa do Filme: Cidade de Deus" width="135">
+                    <h2>Cidade de Deus</h2>
+                    <p>2002 - Crime</p>
+                    <p>Nota: ★★★★☆</p>
+                    <span class="badge">Assistido</span>
+                    <button class="button">Editar</button>
+                    <button class="button">Remover</button>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <a href="adicionar.html">Adicionar filme</a>
+        </footer>
+    </body>
 </html>
