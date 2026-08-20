@@ -1,0 +1,41 @@
+/* primaria = #231942 - acento = #5e548e - neutro = #be95c4 */
+@import url('https://googleapis.com');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #00aaff ;
+    background-color: #000d1a;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #000d1a;
+    color: white;
+    padding: 20px;
+}
+.card {
+    background-color: #081729;
+    padding: 20px;
+    border: 1px solid #002d47;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px #042343;
+}
+
+img {
+    max-width: 100%; 
+    display: block;    
+}
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
