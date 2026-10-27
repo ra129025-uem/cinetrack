@@ -30,7 +30,7 @@
                     <h2>A Origem</h2>
                     <p>2010 - Ficção Científica</p>
                     <p>Nota: ★★★★☆</p>
-                    <span class="badge">Assistido</span>
+                    <span class="badge assistido">Assistido</span>
                     <div class="acoes">
                         <button class="button">Editar</button>
                         <button class="button">Remover</button>
@@ -41,7 +41,7 @@
                     <h2>Parasita</h2>
                     <p>2019 - Suspense</p>
                     <p>Nota: ★★★★☆</p>
-                    <span class="badge">Assistido</span>
+                    <span class="badge assistido">Assistido</span>
                     <div class="acoes">
                         <button class="button">Editar</button>
                         <button class="button">Remover</button>
@@ -52,7 +52,7 @@
                     <h2>O Auto da Compadecida</h2>
                     <p>1350 - Comédia</p>
                     <p>Nota: ★★★★★</p>
-                    <span class="badge">Assistido</span>
+                    <span class="badge assistido">Assistido</span>
                     <div class="acoes">
                         <button class="button">Editar</button>
                         <button class="button">Remover</button>
@@ -63,7 +63,7 @@
                     <h2>Duna: Parte Dois</h2>
                     <p>2024 - Ficção Científica</p>
                     <p>Nota: ☆☆☆☆☆</p>
-                    <span class="badge">Quero assistir</span>
+                    <span class="badge quero">Quero assistir</span>
                     <div class="acoes">
                         <button class="button">Editar</button>
                         <button class="button">Remover</button>
@@ -74,7 +74,7 @@
                     <h2>Interestelar</h2>
                     <p>2014 - Ficção Científica</p>
                     <p>Nota: ★★★★★</p>
-                    <span class="badge">Assistido</span>
+                    <span class="badge assistido">Assistido</span>
                     <div class="acoes">
                         <button class="button">Editar</button>
                         <button class="button">Remover</button>
@@ -85,7 +85,7 @@
                     <h2>Cidade de Deus</h2>
                     <p>2002 - Crime</p>
                     <p>Nota: ★★★★☆</p>
-                    <span class="badge">Assistido</span>
+                    <span class="badge assistido">Assistido</span>
                     <div class="acoes">
                         <button class="button">Editar</button>
                         <button class="button">Remover</button>
@@ -96,5 +96,35 @@
         <footer>
             <a href="adicionar.html">Adicionar filme</a>
         </footer>
+        <div id="modal" hidden>
+            <div class="modal-conteudo">
+                <h2>Adicionar filme</h2>
+                <form id="form-filme">
+            <label for="titulo">Título<br></label>
+            <input id="titulo" name="titulo"
+                type="text" required>
+            <label for="ano"><br><br>Ano (de 1888 a 2030)<br></label>
+            <input id="ano" name="ano" type="number" min="1888" max="2030" step="1" required>
+            <label for="genero"><br><br>Gênero<br></label>
+            <input id="genero" name="genero" type="text" required>
+            <label for="url_poster"><br><br>URL do poster<br></label>
+            <input id="url_poster" name="url_poster" type="text">
+            <label for="status"><br><br>Status<br></label>
+            <select id="status" name="status">
+                <option value="Quero Assistir">Quero Assistir</option>
+                <option value="Assistido">Assistido</option>
+                <option value="Assistindo">Assistindo</option>
+            </select>
+            <label for="nota"><br><br>Nota (de 1 a 5)<br></label>
+            <input id="nota" name="nota" type="number" min="1" max="5" step="1">
+            <label for="comentario"><br><br>Faça um comentário sobre o filme:<br></label>
+            <textarea name="comentario" id="comentario" rows="6" cols="50"></textarea>
+            <br>
+            <br>
+            <button type="button">Cancelar</button> 
+            <button type="submit">Salvar</button> 
+        </form>
+            </div>
+        </div>
     </body>
 </html>
